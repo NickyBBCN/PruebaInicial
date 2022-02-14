@@ -2,14 +2,13 @@ package Inicial.tasks;
 
 import Inicial.userinterface.Jointoday1Page;
 import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 
 public class Jointoday1 implements Task {
-    public static Jointoday1 OnThePage() {return Tasks.instrumented(Jointoday1.class);}
-
     private String Firstname;
     private String Lastname;
     private String email;
@@ -21,9 +20,11 @@ public class Jointoday1 implements Task {
         this.email = email;
         this.date = date;
     }
-    public static Jointoday1 onThePage(String firstname, String lastname, String email, String date){
+
+    public static Jointoday1 OnThePage(String firstname, String lastname, String email, String date) {
         return Tasks.instrumented(Jointoday1.class,firstname,lastname,email,date);
     }
+
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(Jointoday1Page.JOIN_BUTTON),

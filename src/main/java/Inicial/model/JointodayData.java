@@ -1,4 +1,4 @@
-package Inicial.userinterface;
+package Inicial.model;
 
 public class JointodayData {
     private String Firstname;
@@ -12,57 +12,12 @@ public class JointodayData {
     private String version;
     private String languaje;
     private String mobile;
+    private String  model;
+    private String operating;
     private String createpass;
     private String confirmpass;
     private String aceptstay;
     private String aceptutest;
-    private String  aceptpolity;
-
-
-    public String getCreatepass() {
-        return createpass;
-    }
-
-    public void setCreatepass(String createpass) {
-        this.createpass = createpass;
-    }
-
-    public String getConfirmpass() {
-        return confirmpass;
-    }
-
-    public void setConfirmpass(String confirmpass) {
-        this.confirmpass = confirmpass;
-    }
-
-    public String getAceptstay() {
-        return aceptstay;
-    }
-
-    public void setAceptstay(String aceptstay) {
-        this.aceptstay = aceptstay;
-    }
-
-    public String getAceptutest() {
-        return aceptutest;
-    }
-
-    public void setAceptutest(String aceptutest) {
-        this.aceptutest = aceptutest;
-    }
-
-    public String getAceptpolity() {
-        return aceptpolity;
-    }
-
-    public void setAceptpolity(String aceptpolity) {
-        this.aceptpolity = aceptpolity;
-    }
-
-
-    public static int get(int i) {
-        return Integer.parseInt(null);
-    }
 
     public String getFirstname() {
         return Firstname;
@@ -160,5 +115,55 @@ public class JointodayData {
         this.model = model;
     }
 
-    private String  model;
+    public String getOperating() {
+        return operating;
+    }
+
+    public void setOperating(String operating) {
+        this.operating = operating;
+    }
+
+    public String getCreatepass() {
+        return createpass;
+    }
+
+    public void setCreatepass(String createpass) {
+        this.createpass = createpass;
+    }
+
+    public String getConfirmpass() {
+        return confirmpass;
+    }
+
+    public void setConfirmpass(String confirmpass) {
+        this.confirmpass = confirmpass;
+    }
+
+    public String getAceptstay() {
+        return aceptstay;
+    }
+
+    public void setAceptstay(String aceptstay) {
+        this.aceptstay = aceptstay;
+    }
+
+    public String getAceptutest() {
+        return aceptutest;
+    }
+
+    public void setAceptutest(String aceptutest) {
+        this.aceptutest = aceptutest;
+    }
+
+    public String getAceptpolity() {
+        return aceptpolity;
+    }
+
+    public void setAceptpolity(String aceptpolity) {
+        this.aceptpolity = aceptpolity;
+    }
+
+    private String  aceptpolity;
+
+
 }

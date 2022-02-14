@@ -10,21 +10,21 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 
 public class Jointoday4 implements Task {
-    public static Jointoday4 OnThePage() {
-        return Tasks.instrumented(Jointoday4.class);
-    }
+
     private String createpass;
     private String confirmpass;
     private String aceptstay;
     private String aceptutest;
     private String  aceptpolity;
-
     public Jointoday4(String createpass, String confirmpass, String aceptstay, String aceptutest, String aceptpolity) {
         this.createpass = createpass;
         this.confirmpass = confirmpass;
         this.aceptstay = aceptstay;
         this.aceptutest = aceptutest;
         this.aceptpolity = aceptpolity;
+    }
+    public static Jointoday4 OnThePage(String confirmpass, String aceptstay, String createpass, String aceptutest, String aceptpolity) {
+        return Tasks.instrumented(Jointoday4.class,confirmpass,aceptstay,createpass,aceptutest,aceptpolity);
     }
 
     @Override
